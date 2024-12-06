@@ -10,14 +10,18 @@ body {
 .hero-section {
     position: relative;
     padding: 20px;
-    background: none;
 }
 
 .logo-left {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     width: 120px;
+    z-index: 1000;
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .text-box {
@@ -122,10 +126,6 @@ p {
 
 /* 響應式設計 */
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 10px;
-    }
-
     .logo-left {
         width: 80px;
     }
@@ -133,15 +133,6 @@ p {
     .text-box {
         margin: 10px;
         padding: 15px;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.2em;
-    }
-
-    .character {
-        flex-direction: column;
-        margin-bottom: 15px;
     }
 
     .character-img {
@@ -158,7 +149,6 @@ p {
         width: 100%;
     }
 }
-
 
 
 
