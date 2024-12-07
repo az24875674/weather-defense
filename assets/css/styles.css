@@ -6,6 +6,7 @@ body {
     color: #ffffff;
     background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
+    overflow-x: hidden; /* 防止水平滾動 */
 }
 
 .hero-section {
@@ -94,7 +95,6 @@ p {
     gap: 10px; /* 圖標與文字間距 */
 }
 
-/* 條列項目圖標 */
 #features li::before {
     content: "★"; /* 自定義圖標 */
     color: #ffcc00; /* 圖標顏色 */
@@ -103,7 +103,6 @@ p {
     flex-shrink: 0;
 }
 
-/* 保持標題在一行 */
 #features li strong {
     color: #ffcc00; /* 條目標題顏色 */
     font-size: 1.2em;
